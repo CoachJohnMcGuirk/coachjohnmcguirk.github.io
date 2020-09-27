@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Munio - Portfolio Creative Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Perfect masonry isotope portfolio template. Masonry portfolio examples. Build your portfolio with soho template." />
+    <meta name="keywords" content="ajax portfolio, portfolio design, portfolio template, minimal portfolio, masonry isotope portfolio " />
+    <meta name="author" content="ClaPat Studio">
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+	<link rel="icon" type="image/ico" href="images/favicon.ico" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>     
+   
+</head>
+    
+
+
+
+
+
+
+<body class="animsition">
+    
+    
+    
+    <header class="hidden scroll-hide">
+    
+    	<div id="header-container">
+    
+            <div id="logo"><a class="animation-link" href="index.html"><img src="images/logo.png" alt=""></a></div>
+            
+            <div id="nav-menu">
+                <span class="btn_menu_line"></span>
+                <span class="btn_menu_line"></span>
+                <span class="btn_menu_line"></span>
+            </div>
+            
+            <nav>
+                
+                <ul data-breakpoint="1024" class="flexnav">
+                    <li class="menu-item"><a class="animation-link active" href="index.html">Documentation</a></li>
+                    <li class="menu-item"><a class="animation-link" href="credits.html">Credits</a></li>
+                    <li class="menu-item"><a target="_blank" href="http://themeforest.net/user/clapat/portfolio">Themes</a></li>
+                </ul>
+            
+            </nav>
+        
+        </div>
+    
+    </header>
+    
+    
+    
+    
+    <div id="hero" class="hidden hero-big"><div id="hero-styles" class="prl opc">
+    
+    	<!-- Full Screen Image -->
+        <div class="hero-image" style="background-image:url(images/1.jpg)">
+            <div class="overlay" style="background-color:rgba(0,0,0,0.85)">
+                <!-- Image Caption -->
+                <div class="clapat-caption light-content">
+                    <div class="caption-content center-center">
+                    
+                    	<h1>Munio Template Documentation</h1><br>
+                        <p>Created: 05/09/2019  -  Updated 05/09/2019</p><br>
+                        <a class="clapat-button outline-button scroll" href="#main">Let's Start</a>
+                                            	                            
+                    </div>
+                </div>
+                <!--/Image Caption -->
+            </div>
+        </div>
+        <!--/Full Screen Image -->
+    
+    </div></div>
+    
+    
+    
+    
+    <!-- Main --> 
+    <div id="main">
+        
+        <div class="container">
+        
+        	
+             <!-- Documentation Content --> 
+             <div class="doc-content">
+             
+             	<h4>Installation</h4>
+            
+                <p>After unzip template Files, you will found <strong>www</strong> folder that include all the temeplate files.<br><br>
+
+You can view this template in any web browser from your desktop computer. Because some js files are external, you need an internet connection to display correctly the template.<br><br>
+
+Start your FTP client (I persoanlly use Total Commander) and login. Login to your server. You will need your server name (often times this will be your domain name), username, and password that you setup with the hosting company.<br><br>
+
+Locate the domain folder you wish to upload your Theme files to on your server. You are going to want to click and drag every file into your FTP client. </p>
+                
+                
+                
+                
+                <hr class="line">
+                
+                
+                
+                
+                
+                <h4>Smooth Scroll</h4><br>
+                
+				<p>How to eanble the smooth scroll on your website</p>
+                
+                
+				<p>On each page you need to add the <code>.smooth-scroll</code> class to <code>body</code></p>
+                
+                
+                
+                
+                <hr class="line">
+                
+                
+                
+                <h4>Strech Vertical Titles</h4><br>
+                
+				<p>How to disable the vertical scale effect from your titles</p>
+                
+                
+				<p>On each page you need to remove the <code>.scale-title</code> class to <code>body</code></p>
+                
+                
+                
+                
+                <hr class="line">
+                
+                
+                
+                
+                
+                <h4>Google Analytics</h4><br>
+                
+				<p>How to set up your google tracking code</p>
+                
+                <pre class="brush: js; toolbar: false; gutter: false;">                    
+               	
+                
+                	ga('create', 'code_here', 'auto');
+                                    
+                </pre>
+                
+				<p>On each page you need to replace <code>code_here</code> with your tracking code generated by Google.</p>
+                
+                <p><strong>Important:</strong> If you do not want to use, lease as it is. Do not remove it because will generate an error into javascript.</p>
+                
+                
+                
+                
+                <hr class="line">
+                
+                
+                
+                
+                
+                <h4>Page Background color</h4><br>
+                
+				<p>You can set white or black background on each page of your website</p>
+                
+                <pre class="brush: js; toolbar: false; gutter: false;">                    
+               	
+                	<div id="page-content" class="light-content">
+                    	
+                        ... 
+                    
+                    </div>
+                                    
+                </pre>
+                
+                
+				<p>Adding this <code>.light-content</code> class to <code>#page-content</code> on the page you want, will automatically make your page background color dark and will set your elements color white.</p>                
+                
+                
+                
+                
+                <hr class="line">
+                
+                
+                
+                
+                
+                <h4>Menu Type</h4><br>
+                
+				<p><strong>01. How to set up the Classic Menu</strong></p>
+                
+                <pre class="brush: js; toolbar: false; gutter: false;">                    
+               	
+                	<header class="classic-menu">
+                    	
+                        ... Logo Here ...
+                        
+                    	<ul data-breakpoint="1025">
+                        
+                        	... Nav Here ...
+                        
+                        </ul>
+                        
+                        ... Menu Burger Here ...
+                    
+                    </header>
+                                    
+                </pre>
+                
+                
+				<p>Header need to have this class:</p>
+                <code>.classic-menu</code><br><br>
+                
+                <p>Set data breakpoint for <strong>.flexnav</strong> to:</p>
+                <code>data-breakpoint="1025"</code><br><br>
+                
+                
+                <hr class="line">
+                
+                <p><strong>01. How to set up the Fullscreen Menu</strong></p>
+                
+                <pre class="brush: js; toolbar: false; gutter: false;">                    
+               	
+                	<header class="fullscreen-menu">
+                    	
+                        ... Logo Here ...
+                        
+                    	<ul data-breakpoint="10000">
+                        
+                        	... Nav Here ...
+                        
+                        </ul>
+                        
+                        ... Menu Burger Here ...
+                    
+                    </header>
+                                    
+                </pre>
+                
+                
+				<p>Header need to have this class:</p>
+                <code>.fullscreen-menu</code><br><br>
+                
+                <p>Set data breakpoint for <strong>.flexnav</strong> to:</p>
+                <code>data-breakpoint="10000"</code><br><br>
+                
+                
+                <hr class="line">
+                
+                
+                <h4>The Logo</h4><br>
+                
+				<p>This template require 2 logo images. Negative and positive versions</p>
+                
+                <pre class="brush: js; toolbar: false; gutter: false;">                    
+               	
+                	<div id="logo">
+                        <a class="ajax-link" data-type="page-transition" href="index.html">
+                            <img class="black-logo" src="images/logo.png" alt="Logo Black">
+                            <img class="white-logo" src="images/logo-white.png" alt="Logo White">
+                        </a>
+                    </div>
+                                    
+                </pre>
+                
+                
+				<p>The negative version will appear on darker page background.</p>
+                
+                
+                
+                
+                
+                <hr class="line">
+                
+                
+                
+                
+                
+                
+                <h4>Showcase Slider Options</h4><br>
+                
+				<p>You can have two portfolio hover types</p>
+                
+                <pre class="brush: js; toolbar: false; gutter: false;">                    
+               	
+                	<div id="showcase-holder"> 
+                        <div id="showcase-tilt">
+                            <div id="showcase-slider" class="swiper-container">
+                                <div class="swiper-wrapper">
+                    
+                    				... Slides Here ...
+                                
+                    			</div>
+                            </div>
+                    	</div>                    
+                    </div>
+                                    
+                </pre>
+                
+                
+                <code>#showcase-tilt</code><br><br>
+				<p>Remove this div if you want to disable the tilt on mouse move from the showcase slider</p>
+                
+               
+                
+                
+                
+                <hr class="line">
+                
+                
+                
+                
+                
+                
+                <h4>Image Slide Section</h4><br>
+                
+				<p>Add this inside Showcase slider Structure</p>
+                
+                <pre class="brush: js; toolbar: false; gutter: false;">                    
+               	
+                	<div class="swiper-slide" data-title="SNEAKERS" data-subtitle="Branding">                                            
+                        <div class="img-mask">
+                            <div class="section-image" data-src="images/01hero.jpg"></div>                                            
+                        </div>
+                        <a class="title hide-ball" data-type="page-transition" href="project01.html">SNEAKERS<span>01</span></a>
+                    </div>
+                                    
+                </pre>
+                
+                <br>
+                
+                <h4>Video Slide Section</h4><br>
+                
+				<p>Add this inside Showcase slider Structure</p>
+                
+                <pre class="brush: js; toolbar: false; gutter: false;">                    
+               	
+                	<div class="swiper-slide" data-title="ONLY DANCE" data-subtitle="Video">                                        
+                        <div class="img-mask">
+                            <div class="section-image" data-src="images/04hero.jpg">
+                                <div class="hero-video-wrapper">
+                                    <video loop muted class="bgvid">
+                                        <source src="https://mathematic.tv/wp-content/uploads/2018/12/JULIETTE-ARMANET_A-LA-FOLIE_FRUV71800412_UMUSIC-preview.mp4" type="video/mp4">
+                                        <source src="https://mathematic.tv/wp-content/uploads/2018/12/JULIETTE-ARMANET_A-LA-FOLIE_FRUV71800412_UMUSIC-preview.webm">
+                                    </video>
+                                </div>
+                            </div>                                            
+                        </div>
+                        <a class="title hide-ball" data-type="page-transition" href="project04.html">ONLY DANCE<span>04</span></a>
+                    </div>
+                                    
+                </pre>
+                
+                <br>
+                
+                <code>data-title=""</code><br><br>
+				<p>Type your slide title name here</p>
+                
+                <br>
+                
+                <code>data-subtitle=""</code><br><br>
+				<p>Type your slide subtitle name here</p>
+                
+                
+                
+                
+                <hr class="line">
+                
+                
+                
+                
+                
+                
+                <h4>Page Hero section without image</h4><br>
+                
+                <p>Here is the Hero structure</p>
+                
+                <pre class="brush: js; toolbar: false; gutter: false;">                    
+               	<div id="hero">
+                    <div id="hero-styles" class="parallax-onscroll">
+                        <div id="hero-caption">
+                            <div class="inner">                                        
+                                <div class="hero-title">ABOUT US</div>
+                                <div class="hero-subtitle">Creative Studio Design</div>                                
+                            </div>
+                        </div>                                            
+                    </div>
+                </div>                      
+                </pre>
+                
+                
+                <code>.hero-title</code><br><br>
+				<p>Add your page title letters in span. This is mandatory</p>
+                
+                <code>.hero-subtitle</code><br><br>
+				<p>Add your page subtitle here</p>
+                
+                
+                
+                
+                
+                <hr class="line">
+                
+                
+                
+                
+                <h4>Next Page Navigation</h4><br>
+                
+                <p>Here is the Page Navigation structure</p>
+                
+                <pre class="brush: js; toolbar: false; gutter: false;">                    
+               	<div id="page-nav">
+                    <div class="next-page-wrap">
+                        <div class="next-page-title">
+                            <div class="inner">
+                                <div class="subtitle-info has-animation">Let's Talk</div>
+                                <div class="has-animation" data-delay="150"><a class="page-title hide-ball next-ajax-link-page" data-type="page-transition" href="contact.html">CONTACT</a></div>
+                                <div class="subtitle-name">Get in Touch</div>
+                            </div>                   
+                        </div>
+                    </div>
+                </div>                     
+                </pre>
+                
+                
+                <code>.subtitle-info</code><br><br>
+				<p>Add your page subtitle info here</p><br>
+                
+                <code>.page-title</code><br><br>
+				<p>Add your page title here.<br>Add your next page url here</p><br>
+                
+                <code>.subtitle-name</code><br><br>
+				<p>Add your page subtitle here</p>
+                
+                
+                
+                
+                
+                <hr class="line">
+                
+                
+                
+                
+                
+                
+                <h4>Project Hero section with image</h4><br>
+                
+                <p>Hero Image is located before the <code>#content-scroll</code></p>
+                
+                <pre class="brush: js; toolbar: false; gutter: false;">
+                <div id="hero-bg-wrapper">
+                    <div id="hero-image-parallax">
+                        <div id="hero-bg-image" style="background-image:url(images/01hero.jpg)"></div>
+                    </div>
+                </div>                    
+                </pre>
+                
+                <p>Here is the Hero structure</p>
+                
+                <pre class="brush: js; toolbar: false; gutter: false;">                    
+               	<div id="hero" class="has-image">
+                    <div id="hero-styles" class="parallax-onscroll">
+                        <div id="hero-caption">
+                            <div class="inner">                                        
+                                <div class="hero-title">SNEAKERS</div>
+                                <div class="hero-subtitle">Branding</div>                                
+                            </div>
+                        </div>                            
+                        <div class="hero-bottom">                            
+                            <div class="hb-left">
+                                <div id="scrolldown" class="text-rotate link"><span>Scroll Down<br />Scroll Down<br />Scroll Down<br />Scroll Down</span></div>
+                            </div>                                
+                            <div class="hb-right link"><a class="ajax-link" data-type="page-transition" href="contact.html"><span data-hover="Contact Us">Start a Project</span></a></div>                            
+                        </div>                                      
+                    </div>
+                </div>                 
+                </pre>
+                
+                
+                <code>.hero-title</code><br><br>
+				<p>Add your page title letters in span. This is mandatory</p>
+                
+                <code>.hero-subtitle</code><br><br>
+				<p>Add your page subtitle here</p>
+                
+                <code>#hero-bg-image</code><br><br>
+				<p>Add your image url here</p>
+                
+               
+                
+                
+                
+                <hr class="line">
+                
+                
+                
+                
+                <h4>Next Project Navigation</h4><br>
+                
+                <p>Here is the Project Navigation structure</p>
+                
+                <pre class="brush: js; toolbar: false; gutter: false;">                    
+               	<div id="project-nav">
+                    <div class="next-project-wrap">
+                        
+                        <div class="next-project-title">
+                            <div class="inner">
+                                <div class="scale-wrapper"><div class="next-title hide-ball">next case</div></div> 
+                                <a class="main-title next-ajax-link-project hide-ball" data-type="page-transition" href="project02.html">Particle</a>
+                                <div class="next-subtitle-name">Design experiment of water</div>             
+                            </div>                   
+                        </div>
+                    </div>
+                </div>                       
+                </pre>
+                
+                <p>Next Project Image is located after the <code>#content-scroll</code> closing div</p>
+                
+                <pre class="brush: js; toolbar: false; gutter: false;">                    
+               	<div class="next-project-image">
+                    <div class="next-project-image-bg" style="background-image:url(images/02hero.jpg)"></div>
+                </div>                       
+                </pre>
+                
+                
+                <code>.next-project-image-bg</code><br><br>
+				<p>Set your next prject hero image here here</p><br>
+                
+                <code>.main-title</code><br><br>
+				<p>Add your next project title here.<br>Add your next project page url here</p><br>
+                
+                <code>.next-subtitle-info</code><br><br>
+				<p>Add your next project page info here</p><br>
+                
+                <code>.next-subtitle-name</code><br><br>
+				<p>Add your page subtitle here</p><br>
+                
+                
+                
+                
+                
+                <hr class="line">
+                
+                
+                
+                
+                <h4>Page Row Section</h4><br>
+                
+                <p>Below you will find the <strong>vc_row</strong> extra classes and options</p>
+                
+                <pre class="brush: js; toolbar: false; gutter: false;">                    
+               	<div class="vc_row">
+                	
+                    ...
+                          
+                </div>                    
+                </pre>
+                
+                <code>.small</code><br><br>
+				<p>Will decrease the container width</p>
+                
+                <code>.full</code><br><br>
+				<p>Will make the container full width</p>
+                
+                <code>.row_padding_top</code><br><br>
+				<p>Add padding to top</p>
+                
+                <code>.row_padding_bottom</code><br><br>
+				<p>Add padding to bottom</p>
+                
+                <code>.row_padding_left</code><br><br>
+				<p>Add padding to left</p>
+                
+                <code>.row_padding_right</code><br><br>
+				<p>Add padding to right</p>
+                
+                <code>.row_padding_all</code><br><br>
+				<p>Add padding to all sides</p>
+                
+                
+			
+                
+             
+             </div>
+             <!--/Documentation Content -->   
+             
+             
+             
+             
+             
+             
+             
+        
+        </div>
+
+    </div>
+    <!--/Main -->
+    
+    
+    
+    <!-- Footer -->
+    <footer>
+    
+    	<div id="footer-container">
+            
+            <div class="outer">        
+                <div class="inner">
+                
+                    <div class="scrolltotop"><span class='holder'></span></div>                    
+                        
+                    <p class="copyright">2019 &copy; ClaPat Themes. All rights Reserved.</p>         
+                    
+                    <ul class="socials">   
+                    	<li><a target="_blank" href="https://facebook.com/clapat.ro" class="link"><i class="fa fa-facebook"></i></a></li>
+                        <li><a target="_blank" href="https://dribbble.com/ClaPat" class="link"><i class="fa fa-dribbble"></i></a></li> 	
+                        <li><a target="_blank" href="https://twitter.com/clapatdesign" class="link"><i class="fa fa-twitter"></i></a></li>
+                        <li><a target="_blank" href="https://www.behance.net/clapat" class="link"><i class="fa fa-behance"></i></a></li>
+                    </ul>
+                
+                </div>        
+            </div>
+            
+        </div>
+        
+    </footer>
+    <!--/Footer -->
+    
+   
+
+
+    
+    
+    
+
+		
+	<script src="js/jquery.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/scripts.js"></script>
+
+
+
+</body>
+
+</html>
