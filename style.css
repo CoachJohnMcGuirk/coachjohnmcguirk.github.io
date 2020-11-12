@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+.hero {
+ background-image: url("/images/Main_BG.png");
+ background-color: #cccccc;
+ position: relative;
+ width: 100%;
+ height: 100%;
+ background-repeat: no-repeat;
+ background-position: center center;
+ background-size: cover;
+ opacity: 1;
+}
+
+.reel {
+ background-image: url("/images/Reel_BG.png");
+ background-color: #cccccc;
+ position: relative;
+ width: 100%;
+ height: 100%;
+ background-repeat: no-repeat;
+ background-position: center center;
+ background-size: cover;
+ opacity: 1;
+}
+
+.projects {
+ background-image: url("/images/Projects_BG.png");
+ background-color: #cccccc;
+ position: relative;
+ width: 100%;
+ height: 100%;
+ background-repeat: no-repeat;
+ background-position: center center;
+ background-size: cover;
+ opacity: 1;
+}
+
+.about {
+ background-image: url("/images/About_BG.png");
+ background-color: #cccccc;
+ position: relative;
+ width: 100%;
+ height: 100%;
+ background-repeat: no-repeat;
+ background-position: center center;
+ background-size: cover;
+ opacity: 1;
+}
