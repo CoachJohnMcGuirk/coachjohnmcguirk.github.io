@@ -134,10 +134,10 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
-		font-weight: 300;
-		line-height: 1em;
-		margin: 0 0 1em 0;
+    color: #ffffff;
+    font-weight: 300;
+    line-height: 1em;
+    margin: 0 0 1em 0;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -146,9 +146,10 @@ input, select, textarea {
 		}
 
 	h2 {
-		font-size: 2em;
-		line-height: 1.5em;
-		letter-spacing: -0.025em;
+    font-size: 5em;
+    /* [disabled]line-height: 1.5em; */
+    /* [disabled]letter-spacing: -0.025em; */
+    text-align: right;
 	}
 
 	h3 {
@@ -3110,9 +3111,12 @@ input, select, textarea {
 		}
 
 		.spotlight.top .content, .spotlight.bottom .content {
-			left: 0;
-			padding: 5.1em 0 3.1em 0;
-			width: 100%;
+    left: 0;
+    padding-top: 5.1em;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 3.1em;
+    width: 100%;
 		}
 
 		.spotlight.top .content {
@@ -3506,8 +3510,8 @@ input, select, textarea {
 			}
 
 				#banner .content header h2 {
-					font-size: 2.5em;
-					margin: 0;
+    font-size: 5em;
+    margin: 0;
 				}
 
 				#banner .content header p {
