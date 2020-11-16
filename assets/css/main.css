@@ -153,8 +153,9 @@ input, select, textarea {
 	}
 
 	h3 {
-		font-size: 1.35em;
-		line-height: 1.5em;
+    font-size: 1.35em;
+    line-height: 1.5em;
+    text-align: center;
 	}
 
 	h4 {
@@ -2972,13 +2973,13 @@ input, select, textarea {
 /* Spotlight */
 
 	.spotlight {
-		background-attachment: fixed;
-		background-position: center center;
-		background-size: cover;
-		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
-		height: 100vh;
-		overflow: hidden;
-		position: relative;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
 	}
 
 		.spotlight:nth-last-of-type(1) {
@@ -3378,20 +3379,21 @@ input, select, textarea {
 /* Header */
 
 	#page-wrapper {
-		padding-top: 3.5em;
+    /* [disabled]padding-top: 3.5em; */
 	}
 
 	#header {
-		background: rgba(39, 40, 51, 0.965);
-		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
-		cursor: default;
-		height: 3.5em;
-		left: 0;
-		line-height: 3.5em;
-		position: fixed;
-		top: 0;
-		width: 100%;
-		z-index: 100;
+    /* [disabled]background: rgba(39, 40, 51, 0.965); */
+    /* [disabled]box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25); */
+    cursor: default;
+    height: 3.5em;
+    left: 0;
+    line-height: 3.5em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    /* [disabled]-webkit-box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25); */
 	}
 
 		#header h1 {
