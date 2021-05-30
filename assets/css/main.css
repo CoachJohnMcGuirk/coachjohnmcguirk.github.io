@@ -87,14 +87,15 @@ input, select, textarea {
 	}
 
 	body.is-preload *, body.is-preload *:before, body.is-preload *:after {
-		-moz-animation: none !important;
-		-webkit-animation: none !important;
-		-ms-animation: none !important;
-		animation: none !important;
-		-moz-transition: none !important;
-		-webkit-transition: none !important;
-		-ms-transition: none !important;
-		transition: none !important;
+    -moz-animation: none !important;
+    -webkit-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+    -moz-transition: none !important;
+    -webkit-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+    max-width: none;
 	}
 
 	body, input, select, textarea {
@@ -635,9 +636,11 @@ input, select, textarea {
 /* Container */
 
 	.container {
-		margin: 0 auto;
-		max-width: calc(100% - 4em);
-		width: 70em;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    max-width: calc(100% - 4em);
+    width: 70em;
 	}
 
 		.container.xsmall {
@@ -759,7 +762,8 @@ input, select, textarea {
 		}
 
 		.row > .col-5 {
-			width: 41.66667%;
+    width: 41.66667%;
+    text-align: right;
 		}
 
 		.row > .off-5 {
@@ -2535,7 +2539,13 @@ input, select, textarea {
 			border-radius: 4px;
 			display: block;
 		}
-
+		.image video {
+			border-radius: 4px;
+			display: block;
+		}
+		.image.left video, .image.right video {
+				width: 100%;
+		}
 		.image.left {
 			float: left;
 			margin: 0 1.5em 1em 0;
@@ -3495,7 +3505,7 @@ input, select, textarea {
 			display: inline-block;
 			height: 100vh;
 			vertical-align: middle;
-			width: 1%;
+/*			width: 1%;*/
 		}
 
 		#banner:after {
@@ -3516,7 +3526,10 @@ input, select, textarea {
     display: inline-block;
     margin-right: 1%;
     max-width: 95%;
-    padding: 6em;
+    padding-top: 6em;
+    padding-right: 6em;
+    padding-left: 0em;
+    padding-bottom: 6em;
     position: relative;
     vertical-align: middle;
     z-index: 1;
@@ -3534,8 +3547,9 @@ input, select, textarea {
 				}
 
 				#banner .content header p {
-					margin: 0.5em 0 0 0;
-					top: 0;
+    margin: 0.5em 0 0 0;
+    top: 0;
+    padding-left: 0px;
 				}
 
 			#banner .content .image {
