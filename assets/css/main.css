@@ -114,14 +114,22 @@ input, select, textarea {
 		border-bottom: dotted 1px;
 		color: #e44c65;
 		text-decoration: none;
+		text-shadow: -1px 1px black, 1px -1px black, 1px 1px black, -1px -1px black;
 	}
 
-		a:hover {
+		a:hover, a:hover b{
 			color: #e44c65 !important;
 			border-bottom-color: transparent;
 		}
+	.image a{
+		color: #ffffff;
+	}
 
 	strong, b {
+		-moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		color: #ffffff;
 		font-weight: 600;
 	}
@@ -134,11 +142,16 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
+	h1, h2, h3, h4, h5, h6, a {
+
+	}
+
 	h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
     font-weight: 300;
     line-height: 1em;
     margin: 0 0 1em 0;
+	text-shadow: -1px 1px black, 1px -1px black, 1px 1px black, -1px -1px black;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
