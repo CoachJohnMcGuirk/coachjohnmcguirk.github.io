@@ -139,7 +139,11 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2em 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 2em;
+    line-height: 150%;
 	}
 
 	h1, h2, h3, h4, h5, h6, a {
@@ -161,7 +165,7 @@ input, select, textarea {
 
 	h2 {
     font-size: 5em;
-    /* [disabled]line-height: 1.5em; */
+    /* [disabled]line-height: 1em; */
     /* [disabled]letter-spacing: -0.025em; */
     text-align: right;
 	}
@@ -683,8 +687,8 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			.container {
-				width: 90%;
-				max-width: 100%;
+    /* [disabled]width: 90%; */
+    max-width: 100%;
 			}
 
 		}
@@ -694,6 +698,10 @@ input, select, textarea {
 			.container {
 				width: 100% !important;
 			}
+h2   {
+    text-align: left;
+}
+
 
 		}
 
@@ -2587,8 +2595,8 @@ input, select, textarea {
 		}
 
 			.image.fit img {
-				width: 100%;
-			}
+				width: 100%;		
+}
 
 			.image.fit p {
     position: absolute;
@@ -2599,10 +2607,11 @@ input, select, textarea {
     -ms-transform: translate(-50%,-50%);
     -o-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
+    line-height: 100%;
 			}
 	iframe {
-		width:16em;
-		height:9em;
+		width:20em;
+		height:11.25em;
 	}
 
 /* List */
