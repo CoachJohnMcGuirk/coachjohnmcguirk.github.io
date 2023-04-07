@@ -4167,13 +4167,17 @@ h2   {
 		/* Spotlight */
 
 			.spotlight .image.main {
-    max-height: 100%;
+    			max-height: 100%;
 			}
 
 			.spotlight .content {
 				padding: 3em 1.25em 1em 1.25em !important;
 			}
 
+			#one .content, #two .content {
+    			transform: translate(0,-150%);
+			}
+		
 		/* Wrapper */
 
 			.wrapper {
