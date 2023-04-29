@@ -67,11 +67,11 @@
 										</header>
 									</div>
 							</section>-->
-		  <section id="one" class="spotlight style1 middle project">
-					<span class="image fit main"><img src="images/LU_BG.png" alt="" /></span>
+				<section id="one" class="spotlight style1 middle project">
+					<span class="image fit main"><img src="images/PK_BG.png" alt="" /></span>
 					<div class="content">
 						<header>
-							<h2>lego<b>universe</b></h2>
+							<h2>pym<b>kitchen</b></h2>
 						</header>
 					</div>
 					<a href="#content" class="goto-next scrolly">Next</a>
@@ -80,15 +80,12 @@
 						<!-- Content -->
 							<section id="content" style="margin: 1.5em">
 <!--								<div><a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a><h2 style="position: absolute; top: 50%; left: 50%; text-align: center"></h2></div>-->
-								<p>In 2008 I moved from New York City out to Colorado and started doing video work for NetDevil marketing.  NetDevil was an expanding game studio specializing in MMOs.  In addition to Jumpgate: Evolution, NetDevil had been contracted to make an MMO for LEGO, which came to be known as LEGO Universe.</p>
-								<p>Initially the game was in its early stages and a lot was still being worked out, however I filled this time by getting acquainted with the virtual camera controls and tools inside the game to record check-in videos as well as recording playtests which were held once a week. I even worked on some of the in-game cinematics.</p>
-								<span class="image right"><iframe src="https://player.vimeo.com/video/562635036?title=0&byline=0&portrait=0#t=0m05s" frameborder="0" allowfullscreen></iframe></span>
-								<p>Bit by bit the game was becoming more polished, more complete, and deadlines were approaching.  Marketing started ramping up and one of the first public trailers we created internally for the public was the 'Build Trailer' which showcased claiming a property and building on it with friends.  Media Coordinator Chris Brubaker was my cohort on the media team and he and I worked together to storyboard this video and then wrangle the people we needed to capture the shots we needed.  At one point my brothers were in town and we even stuck them in front of some computers to help us out with the captures.</p>
-								<span class="image left"><iframe src="https://player.vimeo.com/video/562633571?title=0&byline=0&portrait=0#t=0m05s" frameborder="0" allowfullscreen></iframe></span>
-								<p>I had a steady stream of video requests and work at this point, but one idea I was really enthusiastic about was using my visual effects background to make some short videos for YouTube of vignettes showing life around the NetDevil offices.  One of the results was the "Soccer" video.  I really wanted to make these videos with fully 3D LEGO assets in Maya, but there was really not enough time to do so.  My compromise was to record the LEGO elements in the LEGO Universe engine on a special green screen level that the developers had made for us.  The results were the videos "Soccer", "Dancing", and "Pets".</p>
-								<span class="image right"><iframe src="https://player.vimeo.com/video/557450287?title=0&byline=0&portrait=0" frameborder="0" allowfullscreen></iframe></span>
-								<p>Eventually NetDevil was bought by Gazillion Entertainment and LEGO Universe launched.  I created trailers and teasers for launch usually in collaboration with Chris, Capture Artist Warren Fligg, and the in-house audio team.  After launch LEGO purchased the LEGO Universe team from Gazillion and I was among those who went to work for LEGO.  I continued to support the game by making trailers for content updates, the last of which was the "Ninjago" update based on the sets and show.  We had a strange obsession with the theme song from the show so naturally Chris managed to get approval from LEGO for us to use the song for our trailer.  I worked on the captures and edit while Cassie Brubaker provided the motion graphics.</p>								
-								<p>Soon after this trailer launched, LEGO decided to shut down LEGO Universe and our studio.  It was devastating to have to leave my dream job, but the experience, friendships, and work from that time will always be special to me.  I loved getting to work with such an incredibly smart, resilient, and talented group!</p>
+								<p>In 2021 I once again worked with Bolder Games and Walt Disney Imagineering to create an installation for Disneyland Paris in the Pym Kitchen at the Avenger’s Campus.  The Pym Kitchen is based on the Marvel Ant-Man property where Pym particles enable matter to be made larger or smaller.  Disney wanted to show food being enlarged or shrunk by Pym particles in a quantum tunnel which would be accomplished by three monitors; two showing the food entering and exiting the tunnel, and one containing the tunnel itself.  The monitors had a lens over them that would add a physicality to the effect.  I worked with my former NetDevil colleague Eric Claeys and Gabriel Priske.</p>
+
+								<p><span class="image right" style="max-width: 500px"><img src="images/PK_01.png" alt=""/></span>Initially I ran some tests in After Effects, but after factoring in workflows, rendering times, and iterations for three monitors, we decided to create this installation in Unreal Engine.  Unreal not only saved us a lot of render time, but it also enabled a lot of very quick changes to our scene and the foods we were using.  My responsibilities were creating the shrink/grow effects and surrounding effects in the quantum tunnel as well as setting up a render pipeline for previews and final deliverables.</p>
+								
+								<p><span class="image left"><iframe src="https://player.vimeo.com/video/822237575?h=af089eedc4&amp;autoplay=1&loop=1&muted=1&badge=0&autopause=0&player_id=0&controls=1&app_id=58479" frameborder="0" allowfullscreen></iframe></span>After moving to Unreal the first trick was how to easily get the outline of the objects being shrunk or grown.  I started with a two step process of rendering out of Unreal with Cryptomattes and using those mattes to create the outline effect in After Effects.  This looked great but I felt like it would be much better and easier to do it all in-engine.  I ran another test where I rendered the outline out of After Effects and brought that into Unreal as a layer.  This also worked great, but it would require an After Effects render for each object.  I wanted to create something that could work dynamically on any object that was thrown in and to try to keep everything in Unreal.  My solution was to use a post-process effect and the custom stencil buffer to get the mask of each object as it was shrunk or grown and to use that mask with some logic in the material editor to create multiple outlines with the timings controlled by keyframes in the Sequencer.  The end effect worked just like we wanted and let us use any object we wanted including some Spider-Bot gags.</p>
+								<p>Finally, I also created the render pipeline for delivering the finals.  Since the installation was for three monitors the render needed three cameras rendered in three 4K EXR sequences in an ACEScg color space.  Unreal has great support for rendering movies and image sequences as well as support for OpenColorIO which enabled the ACEScg color space that we rendered to EXR sequences for delivery.</p>
 							</section>
 
 					</div>
@@ -105,7 +102,7 @@
 						<li><a href="mailto:ryan@ryanbaier.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Ryan Baier. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Ryan Baier. All rights reserved.</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</footer>
 
